@@ -33,8 +33,8 @@ class Autoloader
     public static function loadByNamespace($name)
     {
         $class_path = str_replace('\\', DIRECTORY_SEPARATOR, $name);
-        if (strpos($name, 'Workerman\\') === 0) {
-            $class_file = __DIR__ . substr($class_path, strlen('Workerman')) . '.php';
+        if (strpos($name, 'Process\\') === 0) {
+            $class_file = __DIR__ . substr($class_path, strlen('Process')) . '.php';
         } else {
             if (self::$_autoloadRootPath) {
                 $class_file = self::$_autoloadRootPath . DIRECTORY_SEPARATOR . $class_path . '.php';
