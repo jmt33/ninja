@@ -1,0 +1,31 @@
+{
+    "name": "jmt33/ninja",
+    "type": "library",
+    "description": "process manager",
+    "keywords": ["pcntl", "fork", "signal", "thread", "background", "posix", "cli", "utility", "exit_code", "amqp", "shared memory", "semaphore"],
+    "homepage": "https://github.com/jmt33/ninja",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mtao",
+            "email": "jmtao33@gmail.com"
+        }
+    ],
+    "suggest": {
+        "ext-proctitle": "*",
+        "ext-pcntl": "*",
+        "ext-sysvsem": "Required for using the Semaphore class",
+        "ext-sysvshm": "Required for using the SharedMemory class",
+        "ext-posix": "*"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0.0",
+        "php-mock/php-mock-phpunit": "0.2"
+    },
+    "autoload": {
+        "psr-0": { "Ko": "src" }
+    }
+}
